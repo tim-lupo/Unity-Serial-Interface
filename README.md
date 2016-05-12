@@ -7,13 +7,19 @@ Simple serial port integration with C#. Mainly functions as Arduino interface fo
 3. Under Optimization, make sure "Api Compatibility Level" is set to ".NET 2.0" (NOT Subset!)
 4. Add "using SerialCommunication" to the top
 5. Create a New SerialPorts Object
-		SerialPorts object = new SerialPorts(string serialPortID, int serialRefreshRate);
+```		
+SerialPorts object = new SerialPorts(string serialPortID, int serialRefreshRate);
+```
 6. Declare a serialPortID and serialRefreshRate with method updateSerial
-  	object.updateSerial(string serialPortID, int serialRefreshRate);
+```
+object.updateSerial(string serialPortID, int serialRefreshRate);
+```
 7. Access read/write/close serial permissions from given objects
-  	string read = object.serialRead();
-		object.serialWrite(string input);
-		object.closePorts();
+```
+string read = object.serialRead();
+object.serialWrite(string input);
+object.closePorts();
+```
 
 ##License
 Copyright (c) 2016 Tim Lupo
